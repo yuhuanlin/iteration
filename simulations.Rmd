@@ -118,7 +118,8 @@ sim_results_df %>%
 ## Let's see two inputs 
 map2 function for 2 arguments, also can be used in map 
 can only use .x and .y
-```{r}
+cache = true don't run again when knitting
+```{r, cache=TRUE}
 sim_results_df =
   expand_grid(
   sample_size = c(30, 60, 120, 240),
